@@ -10,7 +10,7 @@ export default function Accueil() {
             justifyContent: 'center',
             alignItems: 'center',
             position: 'relative',
-            background: 'url(/public/MPP.png) no-repeat center center',
+            background: 'url(/dist/MPP.png) no-repeat center center',
             backgroundSize: 'cover',
           }}
         >
