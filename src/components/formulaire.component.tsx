@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Box, Button, TextField, Typography, Snackbar, Alert } from "@mui/material";
 import axios from "axios";
 import { ITattoo } from "../models/itattoo.model";
 
 export default function FormulaireTattoo() {
     const { id } = useParams<{ id: string }>();
-    const navigate = useNavigate();
+    
 
     const [donneesTattoo, setDonneesTattoo] = useState<Partial<ITattoo>>({
         client: {
