@@ -10,7 +10,7 @@ export default function Accueil() {
             justifyContent: 'center',
             alignItems: 'center',
             position: 'relative',
-            background: 'url(/MPP.png) no-repeat center center',
+            background: 'url(https://lambent-marshmallow-7e8243.netlify.app/MPP.png) no-repeat center center',
             backgroundSize: 'cover',
           }}
         >
