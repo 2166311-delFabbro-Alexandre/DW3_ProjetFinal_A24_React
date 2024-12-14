@@ -55,7 +55,7 @@ export default function FormulaireTattoo() {
             setChargement(false);
         } else {
             // Mode édition : récupérer les données existantes
-            axios.get(`http://localhost:3000/api/tattoos/${id}`)
+            axios.get(`https://dw3-projetfinal-a24-api.onrender.com/api/tattoos/${id}`)
                 .then((response) => {
                     const tattoo = response.data.tattoo;
                     console.log("Tattoo chargé: ", tattoo);
@@ -118,7 +118,7 @@ export default function FormulaireTattoo() {
 
 
     const handleSubmit = () => {
-        const url = "http://localhost:3000/api/tattoos";
+        const url = "https://dw3-projetfinal-a24-api.onrender.com/api/tattoos";
         const method = donneesTattoo._id ? "put" : "post";
 
         const payload = {

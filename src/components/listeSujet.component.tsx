@@ -12,7 +12,7 @@ export default function ListeSujets() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get<{ tattoos: ITattoo[] }>('http://localhost:3000/api/tattoos')
+        axios.get<{ tattoos: ITattoo[] }>('https://dw3-projetfinal-a24-api.onrender.com/api/tattoos')
             .then((response) => {
                 setListeTattoos(response.data.tattoos);
             })

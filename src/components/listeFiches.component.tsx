@@ -28,7 +28,7 @@ export default function ListeFiches() {
 
     const rafraichirListe = () => {
         if (type && valeur) {
-            axios.get<{ tattoos: ITattoo[] }>(`http://localhost:3000/api/tattoos/${type}/${valeur}`)
+            axios.get<{ tattoos: ITattoo[] }>(`https://dw3-projetfinal-a24-api.onrender.com/api/tattoos/${type}/${valeur}`)
                 .then((response) => {
                     const tattoos = response.data.tattoos;
                     if(tattoos.length === 0) {

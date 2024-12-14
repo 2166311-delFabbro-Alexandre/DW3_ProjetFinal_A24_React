@@ -44,7 +44,7 @@ const FicheTattoo: React.FC<TattooProps> = ({ tattoo, rafraichirListe, afficherS
   // Fonction pour effacer un tattoo
   const handleEffacer = () => {
     axios
-      .delete(`http://localhost:3000/api/tattoos/delete/${_id}`)
+      .delete(`https://dw3-projetfinal-a24-api.onrender.com/api/tattoos/delete/${_id}`)
       .then((response) => {
         afficherSnackbar("Le tattoo a été effacé avec succès", "success");
         console.log("Le tattoo a été effacé avec succès: ", response.data);
