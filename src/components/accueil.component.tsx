@@ -24,17 +24,6 @@ export default function Accueil() {
               backgroundColor: 'rgba(0, 0, 0, 0.5)', // Superposition sombre
             }}
           />
-          <Typography 
-            variant="h4" 
-            sx={{
-              position: 'relative',
-              color: 'white',
-              fontWeight: 'bold',
-              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-            }}
-          >
-            Tatouages
-          </Typography>
         </Box>
     );
 }
